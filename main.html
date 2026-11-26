@@ -1,1 +1,400 @@
-Hier wird bald die neue Share.io Seite entstehen
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Share.io</title>
+
+<style>
+
+:root{
+
+ --bg:#060b16;
+ --bg2:#0b1324;
+
+ --surface:rgba(15,23,42,.75);
+
+ --text:#eaf4ff;
+ --muted:#8ea4c0;
+
+ --accent:#49d3ff;
+ --accent2:#4f7dff;
+
+ --border:rgba(255,255,255,.08);
+
+}
+
+*{
+ box-sizing:border-box;
+ margin:0;
+ padding:0;
+}
+
+body{
+
+ min-height:100vh;
+
+ font-family:
+ "Segoe UI",
+ sans-serif;
+
+ background:
+ radial-gradient(
+ circle at top,
+ rgba(73,211,255,.15),
+ transparent 35%
+ ),
+
+ radial-gradient(
+ circle at bottom right,
+ rgba(79,125,255,.12),
+ transparent 40%
+ ),
+
+ linear-gradient(
+ 135deg,
+ var(--bg),
+ var(--bg2)
+ );
+
+ color:var(--text);
+
+ display:flex;
+
+ flex-direction:column;
+
+}
+
+header{
+
+ padding:25x 27x 10x;
+
+ text-align:center;
+
+}
+
+.logo{
+
+ font-size:4rem;
+
+ font-weight:800;
+
+ letter-spacing:2px;
+
+ background:
+ linear-gradient(
+ 90deg,
+ #49d3ff,
+ #8fdcff,
+ #4f7dff
+ );
+
+ -webkit-background-clip:text;
+
+ -webkit-text-fill-color:transparent;
+
+ background-clip:text;
+
+}
+
+.subtitle{
+
+ color:var(--muted);
+
+ margin-top:12px;
+
+ font-size:1.05rem;
+
+}
+
+main{
+
+ flex:1;
+
+ max-width:1600px;
+
+ width:100%;
+
+ margin:auto;
+
+ padding:20px 30px 50px;
+
+}
+
+.button-grid{
+
+ display:grid;
+
+ grid-template-columns:
+ repeat(
+ auto-fit,
+ minmax(260px,1fr)
+ );
+
+ gap:28px;
+
+}
+
+.liquid-btn{
+
+ position:relative;
+
+ overflow:hidden;
+
+ display:flex;
+
+ align-items:center;
+
+ justify-content:center;
+
+ min-height:110px;
+
+ text-decoration:none;
+
+ color:var(--text);
+
+ background:
+ rgba(17,25,40,.65);
+
+ backdrop-filter:blur(12px);
+
+ border:1px solid var(--border);
+
+ border-radius:24px;
+
+ font-size:1.2rem;
+
+ font-weight:700;
+
+ transition:.35s ease;
+
+ box-shadow:
+ 0 0 0 transparent;
+
+}
+
+.liquid-btn::before{
+
+ content:"";
+
+ position:absolute;
+
+ width:250%;
+
+ height:250%;
+
+ background:
+ radial-gradient(
+ circle,
+ rgba(73,211,255,.25),
+ transparent 55%
+ );
+
+ top:-70%;
+
+ left:-70%;
+
+ transition:.5s ease;
+
+ opacity:0;
+
+}
+
+.liquid-btn:hover{
+
+ transform:
+ translateY(-6px)
+ scale(1.02);
+
+ border-color:
+ rgba(73,211,255,.4);
+
+ box-shadow:
+
+ 0 0 30px
+ rgba(73,211,255,.18),
+
+ 0 0 70px
+ rgba(79,125,255,.12);
+
+}
+
+.liquid-btn:hover::before{
+
+ opacity:1;
+
+ top:-30%;
+
+ left:-20%;
+
+}
+
+footer{
+
+ border-top:
+ 1px solid
+ rgba(255,255,255,.05);
+
+ padding:20px;
+
+ text-align:center;
+
+ color:var(--muted);
+
+}
+
+.footer-links{
+
+ margin-bottom:10px;
+
+}
+
+.footer-links a{
+
+ color:var(--muted);
+
+ text-decoration:none;
+
+ margin:0 15px;
+
+}
+
+.footer-links a:hover{
+
+ color:var(--accent);
+
+}
+
+@media(max-width:700px){
+
+ .logo{
+
+  font-size:3rem;
+
+ }
+
+ .liquid-btn{
+
+  min-height:90px;
+
+ }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Share.io
+
+</div>
+
+<div class="subtitle">
+
+Zentrale Plattform für Projekte, Tools und Dienste
+
+</div>
+
+</header>
+
+<main>
+
+<div class="button-grid">
+
+<a href="https://mrdatenschutz.github.io/Nexora/" class="liquid-btn">
+Nexora
+</a>
+
+<a href="BUTTON_2_LINK" class="liquid-btn">
+Button 2
+</a>
+
+<a href="BUTTON_3_LINK" class="liquid-btn">
+Button 3
+</a>
+
+<a href="BUTTON_4_LINK" class="liquid-btn">
+Button 4
+</a>
+
+<a href="BUTTON_5_LINK" class="liquid-btn">
+Button 5
+</a>
+
+<a href="BUTTON_6_LINK" class="liquid-btn">
+Button 6
+</a>
+
+<a href="BUTTON_7_LINK" class="liquid-btn">
+Button 7
+</a>
+
+<a href="BUTTON_8_LINK" class="liquid-btn">
+Button 8
+</a>
+
+<a href="BUTTON_9_LINK" class="liquid-btn">
+Button 9
+</a>
+
+<a href="BUTTON_10_LINK" class="liquid-btn">
+Button 10
+</a>
+
+<a href="BUTTON_11_LINK" class="liquid-btn">
+Button 11
+</a>
+
+<a href="BUTTON_12_LINK" class="liquid-btn">
+Button 12
+</a>
+
+<a href="BUTTON_13_LINK" class="liquid-btn">
+Button 13
+</a>
+
+<a href="BUTTON_14_LINK" class="liquid-btn">
+Button 14
+</a>
+
+<a href="BUTTON_15_LINK" class="liquid-btn">
+Button 15
+</a>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-links">
+
+<a href="IMPRESSUM_LINK">
+Impressum
+</a>
+
+<a href="COPYRIGHT_LINK">
+Copyright
+</a>
+
+</div>
+
+<div>
+
+© Share.io
+
+</div>
+
+</footer>
+
+</body>
+</html>
